@@ -2,7 +2,9 @@ import React from 'react'
 
 
 const CountButton = () => {
-    return <div>Hello World</div>
+    return <div>
+        <button>+1</button>
+    </div>
 }
 
 export default CountButton
