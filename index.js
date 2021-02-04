@@ -11,7 +11,7 @@ const  reactContentRoot = document.getElementById('root')
 
    const App = () => {
 
-    const myItem = "item3"
+    const myItem = "item_"
        return(
         <ul>
         <li>item1</li>
@@ -23,4 +23,4 @@ const  reactContentRoot = document.getElementById('root')
 
    
 
-ReactDOM.render(myJSXElement,reactContentRoot)
+ReactDOM.render(<App/>,reactContentRoot)
