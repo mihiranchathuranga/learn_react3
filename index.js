@@ -7,14 +7,20 @@ const  reactContentRoot = document.getElementById('root')
 
    //how to avoid the using of react.createElement
 
-   const myItem = "item3"
+  
 
-   const myJSXElement = (
-       <ul>
-           <li>item1</li>
-           <li>item2</li>
-           <li>{myItem}</li>
-       </ul>
-   )
+   const App = () => {
+
+    const myItem = "item3"
+       return(
+        <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>{myItem}</li>
+    </ul>
+       )
+   }
+
+   
 
 ReactDOM.render(myJSXElement,reactContentRoot)
