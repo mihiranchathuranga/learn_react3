@@ -1,15 +1,11 @@
 import React from 'react'
 import CountButton from './CountButton'
 
-const App = () => {
-
-    const myItem = "item_"
+const App = () => {   
        return(
-        <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>{myItem}</li>
-    </ul>
+        <div>
+            <CountButton/>
+        </div>
        )
    }
 
