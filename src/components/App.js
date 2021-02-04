@@ -1,3 +1,5 @@
+import React from 'react'
+
 const App = () => {
 
     const myItem = "item_"
@@ -9,3 +11,6 @@ const App = () => {
     </ul>
        )
    }
+
+
+export default App
