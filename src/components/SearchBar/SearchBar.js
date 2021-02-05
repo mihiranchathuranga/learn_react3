@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './SearchBar.css'
 
 const SearchBar = () =>{
-const [searchValue,setSearchValue] = useState('the search value')
+const [searchValue,setSearchValue] = useState('')
 
 const handleInputChange = (event) => {
    // alert("Changed")
@@ -10,11 +10,15 @@ const handleInputChange = (event) => {
    setSearchValue(event.target.value) //try to set the value for searchValue
 }
 
+    const handleClearClick = () => {
+           setSearchValue("")
+    }
+
    return(
        <div>
-           <input type="text" value={searchValue} onChange={handleInputChange}/>{searchValue}
+           <input type="text" value={searchValue} onChange={handleInputChange}/>     
+       <button onClick={handleClearClick}>clear</button>
        </div>
-       <button>clear</button>
    )
 }
 
