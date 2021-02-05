@@ -1,6 +1,14 @@
 import React, {useState} from 'react'
 import './SearchBar.css'
 
+const products = [
+    'tooth paste',
+    'tooth brush',
+    'mouth wash',
+    'dental floss',
+    'mouth guard'
+]
+
 const SearchBar = () =>{
 const [searchValue,setSearchValue] = useState('')
 
