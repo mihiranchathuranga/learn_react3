@@ -1,10 +1,14 @@
 import React from 'react'
 
 
+
 const CountButton = () => {
-    const currentCount = 0
+    const currentCount = 1
     return <div>
-        <button>+1</button>
+        <button onClick={() =>
+          alert("Clicked")
+        }>
+            +1</button>
         <div>{currentCount}</div>
     </div>
 }
