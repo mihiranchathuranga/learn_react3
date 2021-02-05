@@ -22,6 +22,12 @@ const handleInputChange = (event) => {
            setSearchValue("")
     }
 
+    /*console.log(
+        products.map((product) => {
+            return product.toUpperCase()
+        })
+    )*/
+
     const shouldDisplayButton = searchValue.length > 0
 
    
@@ -30,6 +36,11 @@ const handleInputChange = (event) => {
        <div>
            <input type="text" value={searchValue} onChange={handleInputChange}/>     
            {shouldDisplayButton && <button onClick={handleClearClick}>clear</button>}
+            
+        {products.map((product)=> {
+            return <div>{product}</div>
+        })}
+
        </div>
    )
 }
