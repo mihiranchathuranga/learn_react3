@@ -1,10 +1,14 @@
-import React, {useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import CountButton from './CountButton/CountButton'
 import SearchBar from './SearchBar/SearchBar'
 
 
 
-const App = () => {   
+const App = () => {  
+    
+    //storing the value inside the "state" of the Component
+
+    const[productState,setProductState] = useState([])
 
     useEffect( () => {
 
@@ -13,13 +17,7 @@ const App = () => {
         <div>
 
            {/*<CountButton incrementBy={5} buttonColor="blue"/>*/}
-          <SearchBar products={[
-    'tooth paste',
-    'tooth brush',
-    'mouth wash',
-    'dental floss',
-    'mouth guard'
-]}/>
+          <SearchBar products={productState}/>
 
 
 
