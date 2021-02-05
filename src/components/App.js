@@ -11,7 +11,7 @@ const App = () => {
     const[productState,setProductState] = useState([])
 
     useEffect( () => {
-
+      setTimeout()
     }, [])
        return(
         <div>
