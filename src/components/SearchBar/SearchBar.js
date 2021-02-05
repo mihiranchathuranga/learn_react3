@@ -36,11 +36,12 @@ const handleInputChange = (event) => {
        <div>
            <input type="text" value={searchValue} onChange={handleInputChange}/>     
            {shouldDisplayButton && <button onClick={handleClearClick}>clear</button>}
-            
-        {products.map((product)=> {
-            return <div>{product}</div>
-        })}
 
+         <ul>   
+        {products.map((product)=> {
+            return <li key={}>{product}</li>
+        })}
+         </ul>
        </div>
    )
 }
