@@ -28,6 +28,13 @@ const handleInputChange = (event) => {
         })
     )*/
 
+    console.log(
+        products.filter((product) =>{
+            return product.includes("mouth")
+        })
+    )
+    
+
     const shouldDisplayButton = searchValue.length > 0
 
    
@@ -39,7 +46,7 @@ const handleInputChange = (event) => {
 
          <ul>   
         {products.map((product)=> {
-            return <li key={}>{product}</li>
+            return <li key={product}>{product}</li>
         })}
          </ul>
        </div>
@@ -51,3 +58,4 @@ export default SearchBar
 //how to do the conditional rendering
 //assume that we want to show that clear button if only input field include some value only
 // {} these are used for interpolation
+//key prop use to identify element in the list
