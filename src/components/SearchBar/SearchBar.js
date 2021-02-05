@@ -4,8 +4,9 @@ import './SearchBar.css'
 const SearchBar = () =>{
 const searchValue = "the search value"
 
-const handleInputChange = () => {
-    alert("Changed")
+const handleInputChange = (event) => {
+   // alert("Changed")
+   console.log(event.target.value)
 }
 
    return(
