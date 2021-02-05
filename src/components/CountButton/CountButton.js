@@ -23,7 +23,7 @@ const CountButton = (props) => {
 
     useEffect(() => {
         if(currentCount === 10){
-            alert("The count is 10")
+           setCurrentCount(0)
         }
     },[currentCount])
 

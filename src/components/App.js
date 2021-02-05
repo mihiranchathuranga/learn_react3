@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import CountButton from './CountButton/CountButton'
 import SearchBar from './SearchBar/SearchBar'
 
 
 
 const App = () => {   
+
+    useEffect( () => {
+
+    }, [])
        return(
         <div>
 
-            <CountButton incrementBy={5} buttonColor="blue"/>
-          {/*  <SearchBar products={[
+           {/*<CountButton incrementBy={5} buttonColor="blue"/>*/}
+          <SearchBar products={[
     'tooth paste',
     'tooth brush',
     'mouth wash',
@@ -17,12 +21,7 @@ const App = () => {
     'mouth guard'
 ]}/>
 
-<SearchBar products={[
-    'bike',
-    'mountain bike',
-    'soccer',
-    
-]}/>*/}
+
 
         </div>
        )
