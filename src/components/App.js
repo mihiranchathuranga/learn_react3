@@ -13,7 +13,7 @@ const products = [
 const App = () => {   
        return(
         <div>
-            <SearchBar/>
+            <SearchBar searchItems={products}/>
         </div>
        )
    }

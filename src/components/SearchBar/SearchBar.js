@@ -1,15 +1,9 @@
 import React, {useState} from 'react'
 import './SearchBar.css'
 
-const products = [
-    'tooth paste',
-    'tooth brush',
-    'mouth wash',
-    'dental floss',
-    'mouth guard'
-]
 
-const SearchBar = () =>{
+
+const SearchBar = (props) =>{
 const [searchValue,setSearchValue] = useState('')
 
 const handleInputChange = (event) => {
