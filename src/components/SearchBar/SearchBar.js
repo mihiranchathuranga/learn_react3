@@ -28,7 +28,7 @@ const handleInputChange = (event) => {
         })
     )*/
 
-    const filteredProducts = products.filter((product)=>
+    const filteredProducts = props.products.filter((product)=>
     {
         return product.includes(searchValue)
     })
