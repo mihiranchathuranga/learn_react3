@@ -7,7 +7,9 @@ import SearchBar from './SearchBar/SearchBar'
 const App = () => {   
        return(
         <div>
-            <SearchBar products={[
+
+            <CountButton incrementBy={5} buttonColor="blue"/>
+          {/*  <SearchBar products={[
     'tooth paste',
     'tooth brush',
     'mouth wash',
@@ -20,7 +22,7 @@ const App = () => {
     'mountain bike',
     'soccer',
     
-]}/>
+]}/>*/}
 
         </div>
        )
