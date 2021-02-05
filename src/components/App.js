@@ -11,8 +11,15 @@ const App = () => {
     const[productState,setProductState] = useState([])
 
     useEffect( () => {
-      setTimeout()
+      setTimeout(() => {setProductState ([
+          "tooth paste",
+          "tooth brush",
+          "mouth wash",
+          "dental floss",
+          "mouth guard"
+      ])} , 2000)
     }, [])
+    
        return(
         <div>
 
