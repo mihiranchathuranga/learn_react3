@@ -12,14 +12,20 @@ const CountButton = (props) => {
         setCurrentCount(currentCount + props.incrementBy)
     }
 
-    useEffect(() => {
+    /*useEffect(() => {
         console.log("only called when component mount")
     }, [])
 
 
     useEffect(() => {
         console.log("called when component mounts or the currentCount is updated")
-    }, [currentCount])
+    }, [currentCount])*/
+
+    useEffect(() => {
+        if(currentCount === 10){
+            alert("The count is 10")
+        }
+    },[currentCount])
 
     return (<div>
         <button onClick={handleClick} >+{props.incrementBy}</button>
@@ -28,3 +34,6 @@ const CountButton = (props) => {
 }
 
 export default CountButton
+
+
+//we can use useEffect() to identify specific value  .... kind things
