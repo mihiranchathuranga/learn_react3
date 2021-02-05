@@ -14,6 +14,8 @@ const handleInputChange = (event) => {
            setSearchValue("")
     }
 
+    const shouldDisplayButton = searchValue.length > 0
+
    return(
        <div>
            <input type="text" value={searchValue} onChange={handleInputChange}/>     
@@ -23,3 +25,6 @@ const handleInputChange = (event) => {
 }
 
 export default SearchBar
+
+//how to do the conditional rendering
+//assume that we want to show that clear button if only input field include some value only
