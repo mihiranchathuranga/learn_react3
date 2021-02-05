@@ -28,11 +28,16 @@ const handleInputChange = (event) => {
         })
     )*/
 
-    console.log(
+    /*console.log(
         products.filter((product) =>{
             return product.includes("mouth")
         })
-    )
+    )*/
+
+    const filteredProducts = products.filter((product)=>
+    {
+        return product.includes(searchValue)
+    })
     
 
     const shouldDisplayButton = searchValue.length > 0
@@ -45,7 +50,7 @@ const handleInputChange = (event) => {
            {shouldDisplayButton && <button onClick={handleClearClick}>clear</button>}
 
          <ul>   
-        {products.map((product)=> {
+        {filteredProducts.map((product)=> {
             return <li key={product}>{product}</li>
         })}
          </ul>
