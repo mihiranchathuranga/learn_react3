@@ -1,10 +1,10 @@
 import React from 'react'
 
 const CountButton = () => {
-    const currentCount = 1
+    let currentCount = 1
 
     const handleClick = () =>{
-        alert("working")
+        currentCount++
     }
 
     return <div>
