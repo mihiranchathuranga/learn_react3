@@ -19,7 +19,9 @@ const App = () => {
           "mouth guard"
       ])} , 2000)
     }, [])
-    
+
+    const hasProducts = productsState.length > 0
+
        return(
         <div>
 
