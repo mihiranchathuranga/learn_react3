@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './CountButton.css'
 
 const CountButton = (props) => {
     console.log(props.incrementBy)
@@ -13,12 +14,12 @@ const CountButton = (props) => {
 
     const buttonStyles = {
         background: props.buttonColor,
-        borderRadius: "10px",
+      
     }
 
     return (<div>
         <button style={buttonStyles} onClick={handleClick} >+{props.incrementBy}</button>
-        <div>{currentCount}</div>
+        <div className="count-display">{currentCount}</div>
     </div>)
 }
 
